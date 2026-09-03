@@ -50,7 +50,7 @@ type(3.14)
 # A string type -- you can use single or double quotes to delineate a string
 type("Hello 7770 Students!")
 # A boolean type
-type(True)
+print(type(True))
 
 
 ############
@@ -144,7 +144,7 @@ print(alphabet[-6:-3]) # The sixth from the end, to the fourth from the end
 # If you use a second colon you can control the step length
 print(alphabet[::4]) # Every fourth letter from the start
 
-print(alphabet[::-1]) # Reverse a list
+print(alphabet[25:0:-1]) # Reverse a list
 
 ############
 
@@ -153,7 +153,7 @@ list_fr = ["un", "deux","troi"]
 
 translate = list(zip(list_en, list_fr)) # zip the lists together)
 print(translate)     # Print the whole list:
-print(translate[2])  # Just the element in the third position
+print(translate[2][1])  # Just the element in the third position
 
 
 ############
@@ -170,7 +170,7 @@ print(family)
 
 old_list = [0,1,2,3,4,5] # The original list
 new_list = old_list # A reference to the original 
-new_list[4] = 'Really?' # Update an element in the new_list
+old_list[4] = 'Really?' # Update an element in the new_list
 print("Here's the new list:", new_list) # As expected
 print("And here is the original list:", old_list) # Realize that this list has been updated too.
 
